@@ -73,3 +73,62 @@
     text-align: left;
   }
 }
+
+/* Below is the styles for heatmap.html */
+h2 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+p {
+  margin: 10px;
+}
+
+body { 
+  margin: 0; padding: 0; 
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.map-overlay {
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  height: 100%;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 95%;
+}
+
+.colors {
+  background: linear-gradient(to right, rgba(33, 102, 172, 0), blue, royalblue, cyan, lime, yellow, orange, darkorange, red);
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 11%;
+  display: inline-block;
+  text-align: center;
+}

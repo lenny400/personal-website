@@ -2,71 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mapbox Seattle Collision Heatmap</title>
+    <title>Seattle Collision Heatmap</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <!-- Load Mapbox GL JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <!-- Load the Mapbox GL JS stylesheet -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        h2 {
-            margin: 10px;
-            font-size: 18px;
-        }
-
-        p {
-            margin: 10px;
-        }
-        
-        body { 
-            margin: 0; padding: 0; 
-        }
-
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .map-overlay {
-            top: 0;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: rgba(255, 255, 255, 0.8);
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgba(0, 0, 0, 0.2);
-            margin-left: 20px;
-            font-family: Arial, sans-serif;
-            overflow: auto;
-            border-radius: 3px;
-            height: 100%;
-            margin-top: 20px;
-            width: 20%;
-        }
-
-        .session {
-            margin-bottom: 20px;
-        }
-
-        .row {
-            height: 12px;
-            width: 90%;
-        }
-
-        .colors {
-            background: linear-gradient(to right, rgba(33, 102, 172, 0), blue, royalblue, cyan, lime, yellow, orange, darkorange, red);
-            margin-bottom: 5px;
-        }
-
-        .label {
-            width: 11%;
-            display: inline-block;
-            text-align: center;
-        }
-    </style>
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div id='map'></div>
@@ -74,10 +17,10 @@
     <div class='session' id='sliderbar'>
         <h1>Seattle Collision Map</h1>
         <h2><label>Choose Active Date Range</label></h2>
-        <input id='minSlider' class='row' type='range' min='0' max='21' step='1' value='0' />
-        <input id='maxSlider' class='row' type='range' min='0' max='21' step='1' value='21' />
         <h3>Start Date<div id="minDate">March 2022</div></h3>
+        <input id='minSlider' class='row' type='range' min='0' max='21' step='1' value='0' />
         <h3>End Date<div id="maxDate">December 2022</div></h3>
+        <input id='maxSlider' class='row' type='range' min='0' max='21' step='1' value='21' />
       </div>
       <div class='session'>
         <h2>Injuries</h2>
@@ -224,8 +167,6 @@
         document.getElementById('minSlider').addEventListener('input', (event) => {
             updateDateRange();
         });
-
-        
 
         document.getElementById('maxSlider').addEventListener('input', (event) => {
             updateDateRange();
