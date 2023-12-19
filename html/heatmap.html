@@ -9,7 +9,7 @@
     <!-- Load the Mapbox GL JS stylesheet -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <!-- Including the main.css file for styling -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <div id='map'></div>
@@ -53,7 +53,7 @@
         // Load your GeoJSON data
         map.addSource('collisions', {
             type: 'geojson',
-            data: 'assets/sdot-collisions.geojson' // Your GeoJSON file location
+            data: '../assets/sdot-collisions.geojson' // Your GeoJSON file location
         });
         
         // Add a heatmap layer

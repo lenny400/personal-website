@@ -94,7 +94,7 @@
        );
 
        async function geojsonFetch() {
-           let response = await fetch('assets/wa-covid-data-102521.geojson');
+           let response = await fetch('../assets/wa-covid-data-102521.geojson');
            let covidData = await response.json();
 
            map.on('load', function loadingData() {
