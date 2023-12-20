@@ -16,7 +16,7 @@
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
         <!-- Redirects to home page -->
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="../index.html">Home</a>
 
         <!-- Links pointing to different pages -->
         <a href="gis_projects.html">GIS Projects</a>
@@ -38,16 +38,24 @@
         </div>
         <br>
         <br>
-        
-        Technologies used:
+        This map was a group project with four other students in GEOG 328 (Web-Based GIS). Using GeoJSON data obtained
+        from the Seattle Department of Transportation, I contributed to developing an interactive heatmap displaying
+        vehicle collision severity in Seattle. The original dataset had 20 years of collision data, so for storage purposes
+        it was cut down to a 21 month period starting in March 2022 and ending in December 2023.
         <br>
+        <br>
+        Development stack:
         <ul>
             <li>Mapbox API</li>
-            <li>JavaScript</li>
+            <li>Python (GeoPandas)</li> 
             <li>HTML</li>
             <li>CSS</li>
-            <li>Python</li> 
+            <li>JavaScript</li>
         </ul> 
+        <br>
+        Dataset:
+        <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-collisions-all-years-2/explore"
+            target="_blank">SDOT Collisions All Years</a> 
         <!-- Horizontal separator line -->
         <div class="separator"></div>
         <br>
@@ -56,6 +64,8 @@
             <!-- Include covidMap.html using an iframe -->
             <iframe src="covidMap.html" width="95%" height="800px"></iframe>
         </div>
+        <br>
+        <br>
     </div>
     
     <!-- Including the main.js file for JavaScript functionality -->
