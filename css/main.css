@@ -149,7 +149,14 @@ iframe {
   margin: 20px 0; /* Adjust the margin to control the space around the separator */
 }
 
+.inline-image {
+  width: 679.35px;
+  height: 560px; /*525px*/
+  display: inline-block; /* Set images to display inline */
+  margin: 5px;
+  border: 2px solid black;
+}
+
 .povertyMap {
-  width: 95%;
-  height: 500px;
+  text-align: center;
 }
