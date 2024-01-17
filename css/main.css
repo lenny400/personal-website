@@ -80,6 +80,10 @@ h2 {
   font-size: 18px;
 }
 
+h3 {
+  text-align: center;
+}
+
 p {
   margin: 10px;
 }
@@ -133,10 +137,6 @@ body {
   text-align: center;
 }
 
-.heatmap, .covidmap {
-  text-align: center; /* Center the page content */
-}
-
 iframe {
   display: block; /* Make iframes block-level elements */
   margin: 0 auto; /* Center horizontally using margin */
@@ -147,4 +147,9 @@ iframe {
   height: 1px;
   background-color: #000000; /* Set the color of the separator */
   margin: 20px 0; /* Adjust the margin to control the space around the separator */
+}
+
+.povertyMap {
+  width: 95%;
+  height: 500px;
 }
