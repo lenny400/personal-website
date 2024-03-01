@@ -1,16 +1,19 @@
 import React from "react";
 import NavBar from './Nav'
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 
 function App() {
 	return (
-		// <BrowserRouter>
-			// <Routes>
-				// <Route path="/" element={NavBar}/>
-				 <NavBar />
-			// </Routes>
-		// </BrowserRouter>
-	);
+		<div>
+			<NavBar />
+			{/* <Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="gis" element={<GISProjects />} />
+				<Route path="java" element={<JavaProjects />} />
+				<Route path="python" element={<PythonProjects />} />
+			</Routes> */}
+		</div>
+	)
 }
 
 export default App;
