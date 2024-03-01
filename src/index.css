@@ -10,6 +10,13 @@ h2, p {
     margin: 1em;
 }
 
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #000000; /* Set the color of the separator */
+    margin: 20px 0; /* Adjust the margin to control the space around the separator */
+  }
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(0, 0, 0);
@@ -113,4 +120,44 @@ h2, p {
 .hamburger input:checked + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+}
+
+/* Heatmap styling */
+
+.map-container {
+    height: 300px;
+}
+
+.map-overlay {
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 3px;
+    height: 100%;
+    margin-top: 20px;
+    width: 20%;
+  }
+
+.row {
+    height: 12px;
+    width: 97%;
+}
+
+.colors {
+    background: linear-gradient(to right, rgba(33, 102, 172, 0), blue, royalblue, cyan, lime, yellow, orange, darkorange, red);
+    margin-bottom: 5px;
+}
+
+.label {
+    width: 11%;
+    display: inline-block;
+    text-align: center;
 }
