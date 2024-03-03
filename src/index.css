@@ -1,10 +1,21 @@
 * {
     box-sizing: border-box;
+    font-family: Roboto Mono;
 }
   
 body {
     margin: 0;
 }  
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url('./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Work Sans;
+    src: url('./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
 
 h2, p {
     margin: 1em;
