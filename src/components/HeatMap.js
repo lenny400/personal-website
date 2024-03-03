@@ -111,6 +111,7 @@ export default function HeatMap() {
 
     return (
         <div className="map">
+            <h2>Seattle Collision Heatmap (unfinished)</h2>
             <div ref={mapContainer} className="map-container"></div>
             {/* <div class='map-overlay' id='features'>
                 <div class='session' id='sliderbar'>
