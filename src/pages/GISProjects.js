@@ -5,7 +5,7 @@ export default function GISProjects() {
     return (
         <div>
             <div className="heatmap">
-                <h2>Seattle Collision Heatmap</h2>
+                <h2>Seattle Collision Heatmap (unfinished)</h2>
                 <HeatMap />
             </div>
             <br/>
@@ -18,7 +18,6 @@ export default function GISProjects() {
             dataset spanning 20 years for storage efficiency.</p>
             <br/>
             <br/> 
-            <p>
             Development stack:
             <ul>
                 <li>Mapbox</li>
@@ -31,8 +30,7 @@ export default function GISProjects() {
             <br/>
             Data Source:
             <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-collisions-all-years-2/explore"
-                target="_blank">SDOT Collisions All Years</a> 
-            </p>
+                target="_blank"> SDOT Collisions All Years</a> 
             {/* Horizontal separator line */}
             <div className="separator"></div>
         </div>

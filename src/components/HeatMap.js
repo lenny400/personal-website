@@ -1,15 +1,15 @@
-import React from "react";
-import { useEffect, useRef, useState } from "react";
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
+import React, { useEffect, useRef } from "react";
+import mapboxgl from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import geojsonData from '../sdot-collisions.geojson'; // Import the GeoJSON data
 
 export default function HeatMap() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm9haHNhbW9hIiwiYSI6ImNsb3Q3Z2lkaTA2aDQycnA4MmdqZ2J1cGYifQ.8NMJu7X2FcPeARpvIH0ItA';
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [long, setLong] = useState(-122.3321);
-    const [lat, setLat] = useState(47.6062);
-    const [zoom, setZoom] = useState(12);
+
+    // const month_year = ["2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01"];
+    // const showDate = ["March 2022", "April 2022", "May 2022",   "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023", "April 2023", "May 2023", "June 2023", "July 2023", "August 2023", "September 2023", "October 2023", "November 2023", "December 2023"]
 
     useEffect(() => {
         if (!map.current) {
@@ -21,13 +21,12 @@ export default function HeatMap() {
             });
 
             map.current.on('load', function () {
-                // Load your GeoJSON data
                 map.current.addSource('collisions', {
                     type: 'geojson',
-                    data: '../assets/sdot-collisions.geojson' // Your GeoJSON file location
+                    data: geojsonData // Use imported GeoJSON data as the data source
                 });
 
-                // Add a heatmap layer
+                // Add heatmap layer
                 map.current.addLayer({
                     id: 'heatmap-layer',
                     type: 'heatmap',
@@ -71,20 +70,21 @@ export default function HeatMap() {
                     source: 'collisions',
                     minzoom: 14,
                     paint: {
-                        'circle-radius': {
-                            property: 'INJURIES',
-                            type: 'exponential',
-                            stops: [
-                                [{ zoom: 15, value: 0 }, 5],
-                                [{ zoom: 15, value: 3 }, 10],
-                                [{ zoom: 22, value: 0 }, 20],
-                                [{ zoom: 22, value: 3 }, 50]
-                            ]
-                        },
-                        'circle-color': {
-                            property: 'INJURIES',
-                            type: 'interval',
-                            stops: [
+                    // increase the radius of the circle as the zoom level and dbh value increases
+                    'circle-radius': {
+                        property: 'INJURIES',
+                        type: 'exponential',
+                        stops: [
+                        [{ zoom: 15, value: 0 }, 5],
+                        [{ zoom: 15, value: 3 }, 10],
+                        [{ zoom: 22, value: 0 }, 20],
+                        [{ zoom: 22, value: 3 }, 50]
+                        ]
+                    },
+                    'circle-color': {
+                        property: 'INJURIES',
+                        type: 'interval',
+                        stops: [
                                 [0, 'rgba(33, 102, 172, 0)'],   // No injuries, weight 0
                                 [1, 'blue'], // 1 injury, weight 0.2
                                 [2, 'royalblue'], // 2 injuries, weight 0.4
@@ -94,15 +94,15 @@ export default function HeatMap() {
                                 [10, 'orange'], // 4 injuries, weight 0.8
                                 [13, 'darkorange']   // 13 injuries, weight 1
                             ]
-                        },
-                        'circle-stroke-color': 'white',
-                        'circle-stroke-width': 1,
-                        'circle-opacity': {
-                            stops: [
-                                [14, 0],
-                                [15, 1]
-                            ]
-                        }
+                    },
+                    'circle-stroke-color': 'white',
+                    'circle-stroke-width': 1,
+                    'circle-opacity': {
+                        stops: [
+                        [14, 0],
+                        [15, 1]
+                        ]
+                    }
                     }
                 });
             });
@@ -110,33 +110,31 @@ export default function HeatMap() {
     }, []);
 
     return (
-        <div>
-            <div id="map">
-                <div ref={mapContainer} className="map-container" />
-                <div className="map-overlay" id="features">
-                    <div className="session" id="sliderbar">
-                        <h2><label>Choose Active Date Range</label></h2>
-                        <h3>Start Date<div id="minDate">March 2022</div></h3>
-                        <input id="minSlider" className="row" type="range" min="0" max="21" step="1" value="0" />
-                        <h3>End Date<div id="maxDate">December 2022</div></h3>
-                        <input id="maxSlider" className="row" type="range" min="0" max="21" step="1" value="21" />
-                    </div>
-                    <div class="session">
-                        <h2>Injuries</h2>
-                        <div className="row colors"></div>
-                        <div className="row labels">
-                            <div className="label">0</div>
-                            <div className="label">1</div>
-                            <div className="label">2</div>
-                            <div className="label">3</div>
-                            <div className="label">4</div>
-                            <div className="label">7</div>
-                            <div className="label">10</div>
-                            <div className="label">13</div>
-                        </div>
+        <div className="map">
+            <div ref={mapContainer} className="map-container"></div>
+            {/* <div class='map-overlay' id='features'>
+                <div class='session' id='sliderbar'>
+                    <h2><label>Choose Active Date Range</label></h2>
+                    <h3>Start Date<div id="minDate">March 2022</div></h3>
+                    <input id='minSlider' class='row' type='range' min='0' max='21' step='1' value='0' />
+                    <h3>End Date<div id="maxDate">December 2022</div></h3>
+                    <input id='maxSlider' class='row' type='range' min='0' max='21' step='1' value='21' />
+                </div>
+                <div class='session'>
+                    <h2>Injuries</h2>
+                    <div class='row colors'></div>
+                    <div class='row labels'>
+                        <div class='label'>0</div>
+                        <div class='label'>1</div>
+                        <div class='label'>2</div>
+                        <div class='label'>3</div>
+                        <div class='label'>4</div>
+                        <div class='label'>7</div>
+                        <div class='label'>10</div>
+                        <div class='label'>13</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
-    )
+    );
 }
