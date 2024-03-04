@@ -13,14 +13,14 @@ export default function GISProjects() {
                 <br/>
                 <br/>
                 As part of a group project in GEOG 328 (Web-Based GIS), I collaborated with four students to create an
-                interactive heatmap depicting vehicle collision severity in Seattle. Utilizing GeoJSON data from the Seattle
+                interactive heatmap depicting vehicle collision severity in Seattle. Utilizing JSON data from the Seattle
                 Department of Transportation, we focused on a 21-month period from March 2022 to December 2023, condensing a
                 dataset spanning 20 years for storage efficiency.
                 <br/>
                 <br/> 
                 Development stack:
                 <ul>
-                    <li>Mapbox API</li>
+                    <li>Mapbox API (Mapbox.js)</li>
                     <li>JavaScript</li>
                     <li>Python (GeoPandas)</li> 
                     <li>HTML</li>

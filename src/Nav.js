@@ -13,12 +13,11 @@ export default function NavBar() {
 		<nav className={`topnav ${isOpen ? 'responsive' : ''}`}>
 			{/* Active link pointing to the index.html page */}
 			<Link className="active" to="/">Home</Link>
-			{/* <a className="active" href="index.html">Home</a> */}
 
 			{/* Links to other sections */}
-			<Link to="gis">GIS Projects</Link>
-			<Link to="java">Java Projects</Link>
 			<Link to="python">Python Projects</Link>
+			<Link to="java">Java Projects</Link>
+			<Link to="gis">GIS Projects</Link>
 
 			{/* <a href="html/gis_projects.html">GIS Projects</a>
 			<a href="html/java_projects.html">Java Projects</a>

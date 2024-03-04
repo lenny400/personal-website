@@ -75,10 +75,14 @@ body {
     display: none;
 }
 
-/* When the screen is less than 800 pixels wide */
+/* When the screen is less than 900 pixels wide */
 @media screen and (max-width: 900px) {
     /* Hide all links, except for the selected tab */
     .topnav a:not(.active) {
+        display: none;
+    }
+
+    .topnav.responsive a.active {
         display: none;
     }
   
@@ -90,10 +94,11 @@ body {
     }
 
     .topnav.responsive {
-        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
-    .topnav.responsive .hamburger {
+    .hamburger {
         position: absolute;
         right: 0;
         top: 0;
@@ -103,6 +108,18 @@ body {
         float: none;
         display: block;
         text-align: left;
+    }
+
+    .topnav.responsive a:nth-child(1) {
+        order: 3;
+    }
+
+    .topnav.responsive a:nth-child(2) {
+        order: 2;
+    }
+
+    .topnav.responsive a:nth-child(3) {
+        order: 1;
     }
 }
 
@@ -148,15 +165,19 @@ body {
 
 /* Heatmap styling */
 
+
 .map {
     margin: 1em;
 }
 
 .map-container {
-    height: 300px;
+    height: 700px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* .map-overlay {
+.map-overlay {
     top: 0;
     position: absolute;
     bottom: 0;
@@ -172,7 +193,7 @@ body {
     height: 100%;
     margin-top: 20px;
     width: 20%;
-  } */
+}
 
 .row {
     height: 12px;
