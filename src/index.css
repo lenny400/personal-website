@@ -88,9 +88,11 @@ body {
   
     /* Show the icon that should open and close the topnav */
     .topnav label {
+        display: flex;
         float: right;
-        display: block;
+        justify-content: flex-end; /* Align the label to the right */
         padding: 0.4em 1em 0 1em;
+        order: -1;
     }
 
     .topnav.responsive {
@@ -98,14 +100,7 @@ body {
         flex-direction: column;
     }
 
-    .hamburger {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
     .topnav.responsive a {
-        float: none;
         display: block;
         text-align: left;
     }
