@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Bike Rack Locator",
+        "description": "group project for INFO 340, using React and hosted on Firebase",
+        "imgSrc": "img/bikeRackLocator.png",
+        "link": "https://bike-locator-info340.web.app/"
+    },
+    {
+        "name": "Seattle Collision Heatmap",
+        "description": "group project for geog 328, using js, html, css, python (geopandas)",
+        "imgSrc": "img/heatmap.png",
+        "link": ""
+    }
+]

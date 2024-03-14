@@ -12,10 +12,6 @@
     font-family: Work Sans;
     src: url('./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
 }
-
-/* h2, p {
-    margin: 1em;
-} */
   
 body {
     margin: 0;
@@ -25,8 +21,8 @@ body {
 
 .heroContainer {
     display: flex;
-    background-color: #343232;
-    color: white;
+    background-color: white;
+    color: #343232;
     box-sizing: border-box;
     width: 100%;
     height: 93vh;
@@ -225,10 +221,10 @@ body {
     width: 20%;
 }
 
-.row {
+/* .row {
     height: 12px;
     width: 97%;
-}
+} */
 
 .colors {
     background: linear-gradient(to right, rgba(33, 102, 172, 0), blue, royalblue, cyan, lime, yellow, orange, darkorange, red);
