@@ -30,7 +30,7 @@ export default function GISProjects() {
                 <br/>
                 Data Source:
                 <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/sdot-collisions-all-years-2/explore"
-                    target="_blank"> SDOT Collisions All Years</a>
+                    target="_blank" rel="noreferrer">SDOT Collisions All Years</a>
             </div> 
             {/* Horizontal separator line */}
             <div className="separator"></div>

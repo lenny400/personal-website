@@ -5,8 +5,8 @@ export default function PythonProjects() {
     return (
         <div>
             {/* Page content */}
-            <div class="content">
-                <h2><a href="https://github.com/lenny400/sentiment-analysis" target="_blank">Performing Sentiment Analysis Using Amazon Product Review Data</a></h2>
+            <div class="description">
+                <h2><a href="https://github.com/lenny400/sentiment-analysis" target="_blank" rel="noreferrer">Performing Sentiment Analysis Using Amazon Product Review Data</a></h2>
                 <p>This was an assignment for my Intro to Machine Learning class. The objectives of this assignment were to:</p>
                 <ul>
                     <li>Use Pandas dataframes to do feature engineering.</li>

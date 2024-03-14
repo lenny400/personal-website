@@ -13,21 +13,57 @@
     src: url('./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
 }
 
-h2, p {
+/* h2, p {
     margin: 1em;
-}
+} */
   
 body {
     margin: 0;
 }  
 
-/* Home Page Styling */
+/* Hero Section Styling */
 
-.intro {
-    margin: 5em;
+.heroContainer {
+    display: flex;
+    background-color: #343232;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 93vh;
+    align-items: center;
+    justify-content: flex-start;
 }
 
- /*  */
+.heroContent {
+    margin: 2em;
+}
+
+.heroContainer h2, p {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.heroContainer img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    margin: 1em;
+}
+
+@media (max-width: 900px) {
+    .heroContainer img {
+        width: 60%;
+        height: 60%;
+        margin-right: 2.5em;
+    }
+}
+
+@media (max-width: 650px) {
+    .heroContainer img {
+        width: 45%;
+        height: 45%;
+    }
+}
 
 .description {
     margin: 1em;
