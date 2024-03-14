@@ -240,3 +240,13 @@ body {
     display: inline-block;
     text-align: center;
 }
+
+/* GIS Page Styling */
+.contour-maps img {
+    width: 679.35px;
+    height: 560px; /*525px*/
+    display: inline-block; /* Set images to display inline */
+    margin: 1em;
+    border: 2px solid black;
+    justify-content: center;
+  }

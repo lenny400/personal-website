@@ -10,7 +10,7 @@ export default function Hero() {
                     in GIS techniques, web development, and data analysis.
                 </p>
             </div>
-            <img src="osaka.png" alt="Me standing in front of Osaka"/>
+            <img src="img/osaka.png" alt="Me standing in front of Osaka"/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function GISProjects() {
             </div>
             <br/>
             <div className="description">
-                <strong>Project Timeline: 4 weeks</strong>
+                <b>Project Timeline: 4 weeks</b>
                 <br/>
                 <br/>
                 As part of a group project in GEOG 328 (Web-Based GIS), I collaborated with four students to create an
@@ -34,6 +34,15 @@ export default function GISProjects() {
             </div> 
             {/* Horizontal separator line */}
             <div className="separator"></div>
+
+            <h3>Mapping Fire and Emergency Medical Incidents in Kent, Washington</h3>
+            <div class="contour-maps">
+                <img src="img/contour-maps/allResponses.png" alt="All Responses" />
+                <img src="img/contour-maps/fireExplosionHazMat.png" alt="Fire, Explosion, Haz Mat" />
+                <img src="img/contour-maps/structureFires.png" alt="Structure Fires" />
+                <img src="img/contour-maps/rescueEMS.png" alt="Rescue, EMS" />
+                <img src="img/contour-maps/serviceCallsOther.png" alt="Service Calls, Other" />
+            </div>
         </div>
     )
 }
