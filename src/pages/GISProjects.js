@@ -1,5 +1,5 @@
 import React from "react";
-import HeatMap from "../components/HeatMap";
+// import HeatMap from "../components/HeatMap";
 import projectData from '../data/projectData.json';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,7 +36,7 @@ export default function GISProjects() {
                     target="_blank" rel="noreferrer">SDOT Collisions All Years</a>
             </div>  */}
 
-            <h3>Mapping Fire and Emergency Medical Incidents in Kent, Washington</h3>
+            <h2 className="title">Mapping Fire and Emergency Medical Incidents in Kent, Washington</h2>
             <div class="contour-maps">
                 <img src="img/contour-maps/allResponses.png" alt="All Responses" />
                 <img src="img/contour-maps/fireExplosionHazMat.png" alt="Fire, Explosion, Haz Mat" />
@@ -61,6 +61,9 @@ export default function GISProjects() {
                             <h2 className="card-title">{card.name}</h2>
                             <p className="card-text">{card.description}</p>
                             <a className="btn btn-dark" href={card.link} target="_blank" rel="noreferrer">Link</a>
+                            {card.repo && (
+                              <a className="btn btn-dark" href={card.repo} target="_blank" rel="noreferrer">Repo</a>
+                            )}
                           </div>
                         </div>
                       </div>          

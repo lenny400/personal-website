@@ -246,3 +246,14 @@ body {
     border: 2px solid black;
     justify-content: center;
   }
+
+  /* project button styling */
+  .col-sm a {
+    margin-right: 0.5em;
+  }
+
+  /* GIS page styling */
+  .title {
+    margin: 1em;
+    text-align: center;
+  }
