@@ -16,7 +16,6 @@ export default function NavBar() {
 
 			{/* Links to other sections */}
 			<Link to="python">Python Projects</Link>
-			<Link to="java">Java Projects</Link>
 			<Link to="gis">GIS Projects</Link>
 
 			{/* <a href="html/gis_projects.html">GIS Projects</a>

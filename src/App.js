@@ -14,7 +14,6 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="gis" element={<GISProjects />} />
-				<Route path="java" element={<JavaProjects />} />
 				<Route path="python" element={<PythonProjects />} />
 				<Route path="*" element={<Navigate to="/" />}/>
 			</Routes> 

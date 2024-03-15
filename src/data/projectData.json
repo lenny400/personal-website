@@ -1,22 +1,25 @@
 [
     {
-        "name": "Bike Rack Locator",
-        "description": "group project for INFO 340, using React and hosted on Firebase",
-        "imgSrc": "img/bikeRackLocator.png",
-        "link": "https://bike-locator-info340.web.app/",
-        "repo": "https://github.com/info340a-wi24/project-info340-ab-team-1"
-    },
-    {
         "name": "Seattle Collision Heatmap",
-        "description": "group project for geog 328, using js, html, css, python (geopandas)",
+        "description": "A thematic heatmap showcasing the frequency of vehicle collisions in Seattle, providing insights into the number of injuries caused by each collision.",
         "imgSrc": "img/heatmap.png",
         "link": "https://noah-rarick.github.io/seattle-collisions/heatmap.html",
-        "repo": "https://github.com/lenny400/seattle-collisions"
+        "repo": "https://github.com/lenny400/seattle-collisions",
+        "stack": ["Mapbox GL JS", "Python (GeoPandas)", "HTML", "CSS", "Github"]
     },
     {
         "name": "Earthquake Risk StoryMap",
-        "description": "ArcGIS StoryMap informing the public of earthquake risk in California",
+        "description": "A comprehensive ArcGIS StoryMap educating the public about earthquake risks in California. Utilized a 3D web scene and interactive dashboard to dynamically display various earthquake statistics.",
         "imgSrc": "img/storymap.png",
-        "link": "https://storymaps.arcgis.com/stories/6420595710ce433fa2b5ede1573b06a1"
+        "link": "https://storymaps.arcgis.com/stories/6420595710ce433fa2b5ede1573b06a1",
+        "stack": ["ArcGIS StoryMaps", "ArcGIS Living Atlas", "ArcGIS Instant Apps"]
+    },
+    {
+        "name": "Bike Rack Locator",
+        "description": "React web application integrating mapping functionality to display locations of bike racks within Seattle. Utilized Firebase Hosting and Firebase Realtime Database to enhance user interaction through seamless data updates and synchronization.",
+        "imgSrc": "img/bikeRackLocator.png",
+        "link": "https://bike-locator-info340.web.app/",
+        "repo": "https://github.com/info340a-wi24/project-info340-ab-team-1",
+        "stack": ["React", "Firebase", "Mapbox GL JS", "CSS"]
     }
 ]
