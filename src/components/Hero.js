@@ -7,7 +7,7 @@ export default function Hero() {
                 <h1>Hello! </h1><br/>
                 <h2>I'm Shawn,<br/><br/>a GIS analyst and web developer based in Seattle, WA.</h2>
                 <p>This website showcases a collection of projects highlighting my proficiency
-                    in GIS techniques and web mapping.
+                    in GIS, web mapping, and design.
                 </p>
             </div>
             <img src="img/osaka.png" alt="Me standing in front of Osaka"/>
