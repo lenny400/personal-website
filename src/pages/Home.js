@@ -1,8 +1,12 @@
 import React from "react";
 import Hero from "../components/Hero";
+import GISProjects from "./GISProjects";
 
 export default function Home() {
     return (
-        <Hero />
+        <div>
+            <Hero />
+            <GISProjects />
+        </div>
     )
 }

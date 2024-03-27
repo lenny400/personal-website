@@ -20,6 +20,6 @@
         "imgSrc": "img/bikeRackLocator.png",
         "link": "https://bike-locator-info340.web.app/",
         "repo": "https://github.com/info340a-wi24/project-info340-ab-team-1",
-        "stack": ["React", "Firebase", "Mapbox GL JS", "CSS"]
+        "stack": ["React", "Firebase", "Mapbox GL JS", "CSS", "Github"]
     }
 ]

@@ -21,8 +21,8 @@ body {
 
 .heroContainer {
     display: flex;
-    background-color: white;
-    color: #343232;
+    background-color: rgb(49, 42, 42);
+    color: #ffffff;
     box-sizing: border-box;
     width: 100%;
     height: 93vh;
@@ -221,11 +221,6 @@ body {
     width: 20%;
 }
 
-/* .row {
-    height: 12px;
-    width: 97%;
-} */
-
 .colors {
     background: linear-gradient(to right, rgba(33, 102, 172, 0), blue, royalblue, cyan, lime, yellow, orange, darkorange, red);
     margin-bottom: 5px;
@@ -238,14 +233,24 @@ body {
 }
 
 /* GIS Page Styling */
+.contour-maps {
+    text-align: center;
+}
+
 .contour-maps img {
-    width: 679.35px;
-    height: 560px; /*525px*/
+    width: 90%; /* 679.35px */
+    height: 50%; /* 560px */
     display: inline-block; /* Set images to display inline */
-    margin: 1em;
+    margin: 0.5em;
     border: 2px solid black;
-    justify-content: center;
   }
+
+@media screen and (min-width: 900px){
+    .contour-maps img {
+        width: 680px;
+        height: 500px;
+    }
+}
 
 /* project button styling */
 .col-sm a {
@@ -272,4 +277,36 @@ body {
     display: inline-block; /* Set images to display inline */
     margin: 1em;
     border: 0.5px solid black;
-  }
+}
+
+/* slideshow styling */
+.slideshow-title {
+    margin: 1em;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.slideshow-container {
+    width: 75%;
+    height: 50%;
+    overflow: hidden;
+    border: 2px solid #000000;
+}
+
+.each-slide-effect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Take up full height of slideshow container */
+}
+
+.slide-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+}

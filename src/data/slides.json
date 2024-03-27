@@ -1,0 +1,38 @@
+[
+    {
+        "imgSrc": "img/misc-maps/strRaceMap.png",
+        "alt": "Stroke Map by Race"
+    },
+    {
+        "imgSrc": "img/misc-maps/strokeDeaths2021Map.png",
+        "alt": "Map of stroke deaths in the US for 2021"
+    },
+    {
+        "imgSrc": "img/misc-maps/map1Final.png",
+        "alt": "Map of % change in people enrolled in health insurance in the US from 2018-2021"
+    },
+    {
+        "imgSrc": "img/misc-maps/map2Final.png",
+        "alt": "Map of distribution of disabled population in the US by state"
+    },
+    {
+        "imgSrc": "img/misc-maps/map3Final.png",
+        "alt": "Map of regional cumulative emissions and population by country"
+    },
+    {
+        "imgSrc": "img/misc-maps/poverty_choropleth.png",
+        "alt": "Map of percent population with income below 200% of poverty level in Seattle on choropleth"
+    },
+    {
+        "imgSrc": "img/misc-maps/poverty_graduated_symbol.png",
+        "alt": "Map of percent population with income below 200% of poverty level in Seattle on graduated symbol"
+    },
+    {
+        "imgSrc": "img/misc-maps/cigMap.png",
+        "alt": "Map of cigarette usage among adults in the US in 2019"
+    },
+    {
+        "imgSrc": "img/misc-maps/malariaMap.png",
+        "alt": "Map of malaria risk levels in Kenya in May"
+    }
+]

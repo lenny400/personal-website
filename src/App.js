@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router";
 import { Navigate } from "react-router-dom";
 import NavBar from './Nav'
 import Home from "./pages/Home";
-import GISProjects from "./pages/GISProjects";
+import AboutMe from "./pages/AboutMe";
 import PythonProjects from "./pages/PythonProjects";
 import PhotoshopProjects from "./pages/PhotoshopProjects";
 
@@ -13,7 +13,7 @@ function App() {
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="gis" element={<GISProjects />} />
+				<Route path="about" element={<AboutMe />} />
 				<Route path="python" element={<PythonProjects />} />
 				<Route path="photoshop" element={<PhotoshopProjects />} />
 				<Route path="*" element={<Navigate to="/" />}/>
