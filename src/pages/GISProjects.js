@@ -53,7 +53,7 @@ export default function GISProjects() {
         <div className="separator" />
 
         <div className="slideshow">
-          <h2 className="title">These are a collection of maps I made using R for data manipulation and QGIS for spatial analysis.</h2>     
+          {/* <h2 className="title">These are a collection of maps I made using R for data manipulation and QGIS for spatial analysis.</h2>      */}
           <Slideshow />
         </div>    
       </div>
