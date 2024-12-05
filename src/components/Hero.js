@@ -8,7 +8,7 @@ export default function Hero() {
                 <h2>IT Analyst Intern for City of Tacoma, Environmental Services.</h2>
                 <p>Scroll down to see my resume and projects.</p>
             </div>
-            <img class="heroImg" src="img/shawn.jpeg" alt="Me standing in front of Osaka"/>
+            <img class="heroImg" src="img/shawn.jpeg" alt="My professional headshot"/>
         </div>
     )
 }
