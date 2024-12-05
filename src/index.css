@@ -39,7 +39,7 @@ body {
     margin-bottom: 1em;
 }
 
-.heroContainer img {
+.heroImg {
     width: 75%;
     height: 75%;
     object-fit: contain;
@@ -47,7 +47,7 @@ body {
 }
 
 @media (max-width: 900px) {
-    .heroContainer img {
+    .heroImg {
         width: 60%;
         height: 60%;
         margin-right: 2.5em;
@@ -55,7 +55,7 @@ body {
 }
 
 @media (max-width: 650px) {
-    .heroContainer img {
+    .heroImg {
         width: 45%;
         height: 45%;
     }
@@ -256,6 +256,11 @@ body {
 .col-sm a {
     margin-right: 0.5em;
 }
+
+/* .card.mb-4 {
+    width: 400px;
+    height: auto;
+} */
 
 .title {
     margin: 1em;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router";
 import { Navigate } from "react-router-dom";
-import NavBar from './Nav'
+import NavBar from './components/Nav'
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import PythonProjects from "./pages/PythonProjects";
